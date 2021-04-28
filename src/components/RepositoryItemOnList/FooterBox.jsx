@@ -14,8 +14,8 @@ export const FooterBox = ({ number, text }) => {
     numToRender = String(numToRender) + 'k';
   }
   return (
-    <View style={footerBoxStyle}>
-      <Text subheading bold>{numToRender}</Text>
+    <View testID='footerBox' style={footerBoxStyle}>
+      <Text testID='footerBoxNumber' subheading bold>{numToRender}</Text>
       <Text color='textSecondary'>{text}</Text>
     </View>
   );

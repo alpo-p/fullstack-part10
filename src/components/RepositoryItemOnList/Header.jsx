@@ -30,8 +30,8 @@ export const Header = ({ item }) => (
       <Image style={headerStyles.avatar} source={{ uri: item.ownerAvatarUrl }} />
     </View>
     <View style={headerStyles.infoContainer}>
-      <Text subheading bold>{item.fullName}</Text>
-      <Text style={headerStyles.subText} color='textSecondary'>{item.description}</Text>
+      <Text testID='fullName' subheading bold>{item.fullName}</Text>
+      <Text testID='description' style={headerStyles.subText} color='textSecondary'>{item.description}</Text>
     </View>
   </View>
 );

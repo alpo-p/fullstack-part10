@@ -20,6 +20,6 @@ const langTagStyles = StyleSheet.create({
 });
 export const LanguageTag = ({ item }) => (
   <View style={langTagStyles.box}>
-    <Text bold style={langTagStyles.text}>{item.language}</Text>
+    <Text testID='language' bold style={langTagStyles.text}>{item.language}</Text>
   </View>
 );
